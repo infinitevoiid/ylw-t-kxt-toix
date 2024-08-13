@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.ticket {
+    width: 390px;
+    height: 750px;
+    background-image: url('IMG_3476.PNG');
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+    margin-top: 120px;
+}
+
+.timer {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    color: black;
+}
+
+/*#current-time, #current-date, #expiry-time {
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+#current-date {
+    margin-bottom: 20px; /* Adjust this value to increase the space 
+}
+
+#expiry-time {
+    margin-top: 20px; /* Adjust this value to increase the space
+
+
+#current-time, #current-date {
+    font-size: 24px; /* Increase font size for better visibility
+    font-weight: bold; /* Make the text bold
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 21px;
+}
+
+#expiry-time {
+    font-size: 20px; /* Adjusted font size for expiry time
+    margin-top: 10px; /* Adjusted for spacing between current date and expiry */
+
+
+#current-time {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 22px; /* Increase font size for better visibility */
+    font-weight: bold; /* Make the text bold */
+    background: rgba(255, 255, 255, 1.0);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 72px; /* Adjusted margin for spacing */
+    letter-spacing: 0.1px;
+}
+
+#current-date {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 20px; /* Adjusted font size for date */
+    font-weight: bold;
+    background: rgba(255, 255, 255, 1.0);
+    padding: 1px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: -10px; /* Move the date element up */
+    position: relative; /* Use relative positioning */
+    top: -72px; /* Adjusted margin for spacing */
+    letter-spacing: 0.1px;
+}
+
+/*.blinking-box {
+    position: absolute;
+    bottom: 65px; /* Adjust distance from text *
+    left: 0;
+    width: calc(100% - 10px); /* Adjust width minus padding *
+    height: 25px; /* Height of the blinking rectangle box *
+    background-color: white;
+    animation: blink 1s infinite; /* Blink animation *
+} */
+
+.steady-box {
+    position: absolute;
+    bottom: 68.2px; /* Adjust distance from text */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px; /* Width of the blinking rectangle box */
+    height: 20.1px; /* Height of the blinking rectangle box */
+    background-color: white; /* Solid white background */
+}
+
+.blinking-box {
+    position: absolute;
+    bottom: 68.2px; /* Adjust distance from text */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px; /* Width of the blinking rectangle box */
+    height: 20.1px; /* Height of the blinking rectangle box */
+    display: flex;
+    animation: blink 1s infinite; /* Blink animation */
+    /*background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.blinking-box > div {
+    flex: 1;
+    height: 100%;
+}
+
+.blinking-box .color1 {
+    background-color: #628845;
+}
+
+.blinking-box .color2 {
+    background-color: #C48A56;
+}
+
+.blinking-box .color3 {
+    background-color: #E7A8F1;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/*#expiry-time {
+    font-size: 18px; /* Adjusted font size for expiry time 
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative; /* Use relative positioning *
+    top: -25px;
+}
+
+
+.overlay-image {
+    /* background: url('image.png') 50% / cover no-repeat; *
+    position: absolute; /* Change to absolute positioning *
+    top: 145px; /* Adjust to move up or down *
+    left: 50%; /* Center horizontally *
+    transform: translateX(-50%); /* Center horizontally
+    width: calc(100% - 37px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 129px 0 8.5px 0;
+    box-sizing: border-box;
+} */
+
+.overlay-image {
+    /* background: url('image.png') 50% / cover no-repeat; */
+    position: absolute; /* Change to absolute positioning */
+    top: 267px; /* Adjust to match the background image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%; /* Adjust width to match the background image */
+    height: 16%; /* Adjust height to match the background image */
+    opacity: 1.0; /* Make the overlay image slightly transparent */
+    box-sizing: border-box;
+}
